@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Extent Report Comparator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Stability Checker</h2>
+
+  <div class="upload-section">
+    <div class="file-upload">
+      <label class="custom-file-label" for="htmlFile" id="htmlLabel">Upload Extent Report HTML</label>
+      <input type="file" id="htmlFile" accept=".html" onchange="updateFileLabel('htmlFile', 'htmlLabel')">
+    </div>
+
+    <div class="file-upload">
+      <label class="custom-file-label" for="csvFile" id="csvLabel">Upload Atomic Script CSV</label>
+      <input type="file" id="csvFile" accept=".csv" onchange="updateFileLabel('csvFile', 'csvLabel')">
+    </div>
+
+    <button onclick="processFiles()">Compare Now</button>
+  </div>
+
+  <div class="filter-section">
+    <button onclick="filterStatus('fail')">Show Fail</button>
+    <button onclick="filterStatus('skip')">Show Skip</button>
+    <button onclick="filterStatus('not found')">Show Not Found</button>
+    <button onclick="filterStatus('all')">Show All</button>
+
+    <label for="traineeFilter">Filter by Trainee:</label>
+    <select id="traineeFilter" onchange="filterByTrainee()">
+      <option value="all">All</option>
+    </select>
+
+    <label for="statusFilter">Filter by Test Case Status:</label>
+    <select id="statusFilter" onchange="filterByTrainee()">
+      <option value="all">All</option>
+    </select>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: linear-gradient(to right, #eef2f3, #ffffff);
+  color: #333;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.upload-section,
+.filter-section {
+  background: #ffffff;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.file-upload {
+  margin-bottom: 16px;
+}
+
+.custom-file-label {
+  display: block;
+  padding: 12px;
+  border: 2px dashed #4a90e2;
+  border-radius: 8px;
+  width: 100%;
+  background: #f5faff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.custom-file-label:hover {
+  background-color: #e8f0fe;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button {
+  padding: 10px 18px;
+  margin-top: 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+select {
+  padding: 10px 18px;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 14px 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f7f9;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.fail { background-color: #ffebee !important; color: #c62828; font-weight: bold; }
+.skip { background-color: #fff8e1 !important; color: #f9a825; }
+.done { background-color: #e8f5e9 !important; color: #2e7d32; }
+.in-progress { background-color: #e3f2fd !important; color: #0277bd; }
+.todo { background-color: #fffde7 !important; color: #fbc02d; }
+.not-found { background-color: #f0f0f0 !important; color: #6c757d; font-style: italic; }
+
+tr.fail td {
+  background-color: #ffebee !important;
+  color: #c62828 !important;
+}
