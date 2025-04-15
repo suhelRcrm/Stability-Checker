@@ -22,6 +22,7 @@ The Stability-Checker tool helps QAs and trainees automatically compare atomic t
    - 📊 Upload Atomic Script CSV
 4. Click **"Compare Now"** to view the result table.
 5. Use the filters to refine your view by trainee or status.
+6. Short Demo Video https://jam.dev/c/10acd859-02f8-4926-a485-4e935078f80f
 
 
 ## 🚀 Why Use This Tool?
